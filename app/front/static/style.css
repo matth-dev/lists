@@ -1,0 +1,53 @@
+body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+aside{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1rem;
+}
+
+main header, .item, #new_item, #new_list{
+  display: flex;
+  justify-content: space-between;
+}
+#new_item input,#new_list input{
+  margin: 0;
+}
+#new_item button, #new_list button{
+  margin-top: 0;
+  margin-bottom: 0;
+  min-width: 6.5em;
+}
+.list_header{
+  font-size: 1.5em;
+}
+#items_list{
+  padding: 1em 0 0 0;
+}
+.item_text, #new_item_text, .list_header{
+  width: 50%;
+  flex-basis: 2;
+}
+.item_qt, #new_item_qt{
+  width: 25%;
+  flex-basis: 1;
+}
+.delete_item, #create_new_item{
+  align-self: end;
+}
+.item.validated{
+  text-decoration: line-through;
+  font-style: italic
+}
+#ul_lists{
+  list-style: none;
+}

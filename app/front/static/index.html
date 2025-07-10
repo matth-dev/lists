@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste</title>
+    <link rel="stylesheet" href="https://classless.de/classless.css">
+    <link href="{{ url_for('static', path='style.css')}}" rel="stylesheet">
+</head>
+<body onload="display_lists(archived=false)">
+    <aside>
+        <div id="new_list">
+            <input id="new_list_name" type="text">
+            <button onclick="create_list()" id="create_new_list">+</button>
+        </div>
+        <div id="list_of_lists">
+            <button>List name</button>
+        </div>
+        <hr>
+        <input type="checkbox" id="show_archives" checked="false">
+        <label for="show_archives">Show archives</label>
+    </aside>
+    <main>
+        <header>
+            <h1 id="list_name"></h1>
+            <button id="archive_list" onclick="archive_list()">Archive</button>
+        </header>
+        <div id="active_list">
+            <header>
+                <div class="list_header">Items</div>
+                <div class="list_header qt">Qt.</div>
+            </header>
+            <div id="new_item">
+                <input type="text" id="new_item_text">
+                <input type="number" id="new_item_qt">
+                <button id="create_new_item" onclick="create_new_item()">+</button>
+            </div>
+            <div id="items_list"></div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', path='script.js')}}" defer></script>
+</body>
+</html>
