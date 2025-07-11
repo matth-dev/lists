@@ -25,6 +25,7 @@ I've chosen SQLModel ORM as the interface layer between my SQLite database and P
 ## 🛠️ Installation
 
 ### Pre-requisites
+
 * Python <= 3.13 
 * [uv](https://docs.astral.sh/uv/) package and dependency manager
 
