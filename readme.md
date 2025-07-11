@@ -14,11 +14,12 @@ The main goals of this project were :
 - Understand the request-response cycle in web applications
 - Build something functional while exploring full-stack development concepts
 
+I've chosen SQLModel ORM as the interface layer between my SQLite database and Python objects, combined with Jinja2 for template rendering.
 
 ## 📚 Stack
 
-- Back: Python • Flask • SQLite
-- Front: HTML • CSS • JavaScript
+- Back: Python • FastApi • SQLite • SQLModel
+- Front: HTML • CSS • JavaScript • Jinja2
 - uv • Git
 
 ## 🛠️ Installation
