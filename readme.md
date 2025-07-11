@@ -1,6 +1,6 @@
 # Lists of lists
 
-A very basic to-do/shopping lists app made using Python and FastApi
+A very basic shopping list app made using Python and FastApi
 
 ## 🔍 Project Overview
 
@@ -36,14 +36,29 @@ cd lists
 uv sync
 ```
 
-## Usage
+## 🎯 Usage
 
-* How to run the program
-* Step-by-step bullets
+```bash
+cd lists
+uv run fastapi run app/main.py
 ```
-code blocks for commands
-```
+Then, in your browser go to `http://localhost:8000`
 
-## Screenshots
+> Click on an item name or quantity to "validate" it
 
-here include screenshots so people that don't want to install the project can see what's up
+> Lists can be deleted by going to the app swagger `http://localhost:8000/docs`: You will have access to all CRUD operations but you'll need the list ID.
+
+## 📸 Screenshots
+
+Here are screenshots of the app to show the main features.
+
+![Groceries list](screenshots/groceries_list.png "Groceries list")
+![Validated Items](screenshots/validated_items.png "Validated Items")
+![Archive Attempt](screenshots/archive_attempt.png "Archive Attempt")
+![Archive OK](screenshots/archive_ok.png "Archive OK")
+![Another Shopping List](screenshots/another_shopping_list.png "Another Shopping List")
+
+
+## 📅 Roadmap
+
+✅ Done but any comments are welcome! 

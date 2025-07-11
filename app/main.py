@@ -8,6 +8,12 @@ from typing import Annotated
 from contextlib import asynccontextmanager
 from backend.models.models import List, Item
 from backend.models.schemas import ListRead, ListCreate
+import os
+
+# Create the /data folder because the data.db file is not tracked and git ignore empty directories
+if not os.path.exists("app/backend/data"):
+    print("Creating \"data\" folder...")
+    os.mkdir("app/backend/data")
 
 connect_args = {"check_same_thread": False}
 engine = create_engine("sqlite:///app/backend/data/data.db", connect_args=connect_args, echo=True)
